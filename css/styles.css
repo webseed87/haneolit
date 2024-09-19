@@ -115,6 +115,9 @@ display: flex;
 justify-content: center;
 gap: 30px;
 }
+.partner .swiper {
+display: none;
+}
 .partner .partner-tab li{
 display: flex;
 cursor: pointer;
@@ -259,7 +262,6 @@ color: var(--gray-400);
 }
 
 /* 모바일 반응형 */
-
 @media (max-width:1280px){
 #main {
 padding: 30px 20px 0 20px;
@@ -294,9 +296,11 @@ margin-top: 20px;
 margin-top: 20px;
 gap: 10px;
 }
+.partner {
+padding: 30px 20px;
+}
 .partner .partner-tab{
 display: none;
-
 }
 .partner .partner-tab li {
 width: 100%;
@@ -307,5 +311,72 @@ margin-top:20px;
 }
 #footer-main .Copyright {
 margin-top: 10px;
+}
+#footer-main .lnfo li::after{
+content: "";
+color: #aaa;
+margin: 0 10px;
+}
+.partner .swiper {
+margin-top: 30px;
+width: 100%;
+height: 100%;
+position: relative;
+display:block;
+}
+.partner .swiper-slide {
+text-align: center;
+font-size: 18px;
+display: flex;
+flex-wrap: wrap;
+position: relative;
+justify-content: center;
+align-items: center;
+padding-bottom: 30px;
+}
+.swiper-slide .partner-logo{
+background-color: #0014BA;
+width: calc(100% - 40px);
+padding: 0 20px;
+height: 160px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 30px;
+transition: .5s;
+}
+.swiper-slide .partner-logo.cj{
+background-color: var(--defult-black);
+}
+.swiper-slide .partner-logo.lg{
+background: linear-gradient(90.81deg, #e5437a .69%, #f28d52 75.01%, #ffd028 99.31%);
+}
+.swiper-slide .partner-logo.lotte{
+background-color: #888;
+}
+.swiper-slide .partner-contents{
+margin-top: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.swiper-slide .partner-contents h4{
+font-size: var(--font-title-medium);
+font-weight: 600;
+width: 100%;
+}
+.swiper-slide .partner-contents > p{
+margin-top: 15px;
+font-size: var(--font-body-xsmall);
+color: var(--gray-400);
+}
+.swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction {
+bottom: 0px !important;
+left: 0;
+z-index: 10000 !important;
+width: 100%;
+}
+.swiper-pagination-bullet-active {
+background-color: var(--navy-500);
 }
 }

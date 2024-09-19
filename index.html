@@ -5,9 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>한얼아이티</title>
+  <meta name="apple-mobile-web-app-title" content="한얼아이티" />
+	<meta property="og:title" content="한얼아이티" />
+	<meta property="og:image" content="/images/ogimages.png" />
+	<meta property="og:title" content="한얼아이티" />
+	<meta property="og:description" content="한얼아이티는 혁신적인 SI와 맞춤형 솔루션으로 기업의 디지털 전환을 선도합니다." />
+	<meta property="og:type" content="website"  content="한얼아이티" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="js/common.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -156,6 +165,7 @@
           <h4 class="ani-bottom-top">협력사</h4>
           <h3 class="ani-bottom-top">신뢰할 수 있는 파트너와 함께 혁신을 선도합니다.</h3>
           </div>
+          <!-- 피씨용 탭 -->
           <ul class="partner-tab">
             <li class="active">
               <div class="partner-logo">
@@ -222,7 +232,71 @@
                   <p class="category">ITO분야 협력사</p>
               </div>
             </li> 
-          </ul>
+          </ul> 
+          <!-- 모바일용 슬라이더 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                <div class="partner-logo">
+                <img src="images/etevers-logo.svg" class="logo-big">
+                </div>
+                <div class="partner-contents">
+                  <h4>에티버스</h4>
+                  <p>에티버스는 전략적으로 중요한 IT 서비스와 솔루션을 제공하는 글로벌 기업입니다. 
+                    다양한 산업 분야에서 혁신적인 디지털 전환을 주도하며, 
+                    클라우드 서비스와 컨설팅을 핵심 역량으로 삼고 있습니다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partner-logo cj">
+                  <img src="images/cj-logo.svg" class="logo-big">
+                </div>
+                <div class="partner-contents">
+                  <h4>CJ 올리브네트웍스</h4>
+                  <p>CJ 올리브네트웍스는 CJ그룹의 IT 서비스 및 솔루션을 전문으로
+                    하는 자회사입니다. 
+                   다양한 산업 분야에서 첨단 기술과
+                   혁신적인 솔루션을 제공하여 
+                   고객의 비즈니스 
+                   성장을 지원합니다.</p>
+                </div> 
+
+              </div>
+              <div class="swiper-slide">
+                <div class="partner-logo lg">
+                  <img src="images/lg-logo-w.png" class="logo-big">
+                </div>
+                <div class="partner-contents">
+                  <h4>LG CNS</h4>
+                  <p>LG CNS는 LG 그룹의 자회사로, 
+                    시스템 통합과 IT 아웃소싱에 
+                    강점을 지닌 글로벌 IT 
+                    서비스 기업입니다. 
+                    다양한 산업 분야에서 
+                    디지털 전환을 선도하며 
+                    클라우드 서비스와 
+                    컨설팅을 제공합니다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="partner-logo lotte">
+                <img src="images/lotte-logo-w.png" class="logo-big">
+              </div>
+              <div class="partner-contents">
+                <h4>롯데이노베이트</h4>
+                <p>롯데이노베이트는 롯데그룹의 
+                  디지털 혁신을 주도하는 기업으로, 
+                  인공지능과 빅데이터 기술을 
+                  통해 유통 및 제조 분야에 
+                  최적화된 솔루션을 
+                  제공합니다.</p>
+              </div></div>
+
+            </div>
+            <!-- 페이지네이션 -->
+            <div class="swiper-pagination"></div>
+          </div>
+          
      </section>
 
      <!-- 홍보 섹션 -->
@@ -276,5 +350,21 @@
       <p class="Copyright">Copyright© 2024 haneolIT. All rights reserved.</p>
      </footer>
 </body>
+
+<!-- 스와이퍼 -->
+<script>
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal', 
+    loop: true, 
+    
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
+    },
+  });
+</script>
 
 </html>
