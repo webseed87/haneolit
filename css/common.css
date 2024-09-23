@@ -172,7 +172,7 @@ width: 100vw;
 height:100px;
 position: absolute;
 top: 0;
-z-index: 1;
+z-index: 2;
 padding: 0 4.17vw;
 display: flex;
 justify-content: space-between;
@@ -398,6 +398,79 @@ justify-content: center;
 color:var(--blue-300);
 }
 
+/* 서브 푸터 부분 */
+#footer{
+width: 100vw;
+background-color: var(--gray-500);
+padding: 3vw 5.42vw;
+}
+#footer .link{
+gap: 30px;
+display: flex;
+}
+#footer .link li{
+display: flex;
+gap: 10px;
+}
+#footer .link a{
+font-size: var(--font-body-small);
+text-decoration: none;
+color: var(--gray-100);
+}
+#footer .lnfo{
+margin-top: 50px;
+display: flex;
+font-size: var(--font-body-xsmall); 
+color: var(--gray-300);
+}
+#footer .lnfo li::after{
+content: "|";
+color: #aaa;
+margin: 0 10px;
+}
+#footer .lnfo li:last-child:after{
+content: "";
+margin: 0 0px;
+}
+#footer .Copyright{
+margin-top: 30px;
+font-size: var(--font-body-xsmall); 
+color: var(--gray-300);
+}
+#footer-main .top-button{
+display: flex;
+padding: 20px 24px;
+background-color: var(--navy-500);
+position: fixed;
+right: 30px;
+bottom: 60px;
+top: auto;
+opacity: 0;
+z-index: -1;
+transition:  .5s;
+}
+#footer-main .top-button.on{
+opacity: 1;
+z-index: 1;
+}
+
+#footer .top-button{
+display: flex;
+padding: 20px 24px;
+background-color: var(--navy-500);
+position: fixed;
+right: 30px;
+bottom: 60px;
+top: auto;
+opacity: 0;
+z-index: -1;
+transition:  .5s;
+}
+#footer .top-button.on{
+opacity: 1;
+z-index: 1;
+}
+
 /* 모바일 반응형  */
 
 @media (max-width: 1550px){
@@ -422,14 +495,18 @@ body{
 overflow-x: hidden;
 }
 #header {
-height: 50px;}
-
+height: 50px;
+box-sizing: border-box;
+}
+#header::before {
+display: none;
+}
 .navy-button, .white-button{
 gap: 5px;
 padding: 10px 15px;
 }
 #header .logo {
-width: 120px;
+width: 100px;
 height: 20px;
 }
 #header .top-menu{
@@ -459,9 +536,9 @@ flex-direction: column;
 justify-content: left;
 }
 #header.all-menu .expand-menu > ul > li {
-width: calc(100% - 100px);
-border-bottom: 1px solid var(--gray-300);
-margin: 0 50px;
+width: calc(100% - 40px);
+border-bottom: 1px solid var(--gray-400);
+margin: 0 20px;
 border-right: none;
 display: flex;
 flex-direction: column;
@@ -477,5 +554,21 @@ padding: 10px;
 #header.all-menu .expand-menu .deps-menu li a {
 justify-content: left;
 margin-left: 40px;
+}
+
+#footer .top-button{
+display: none;
+}
+#footer .lnfo {
+flex-wrap: wrap;
+margin-top:20px;
+}
+#footer .Copyright {
+margin-top: 10px;
+}
+#footer-main .lnfo li::after{
+content: "";
+color: #aaa;
+margin: 0 10px;
 }
 }

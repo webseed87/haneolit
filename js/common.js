@@ -21,6 +21,24 @@ const partnerTabItems = document.querySelectorAll('.partner-tab li');
         });
     });
 
+ // 스크롤 이벤트 리스너
+    const topButton = document.querySelector('.top-button');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) { 
+        topButton.classList.add('on')
+      } else {
+        topButton.classList.remove('on')
+      }
+    });
+  
+    // 탑 버튼 클릭 시 스크롤 맨 위로 이동
+    topButton.addEventListener('click', (event) => {
+      event.preventDefault(); 
+      window.scrollTo({ top: 0, behavior: 'smooth' }); 
+    });
+
+
 });
 
 const io = new IntersectionObserver(function (entries) {
