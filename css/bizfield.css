@@ -1,0 +1,176 @@
+/* 메인 비주얼 */
+#main{
+background-image: url(../images/biz-areas-bg.png);
+background-position: center center;
+background-size: cover;
+width: 100vw;
+height: 460px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+#main h2{
+margin-top: 50px;
+font-size: var(--font-headline-small);
+color: var(--gray-500);
+font-weight: 700;
+text-align: center;
+}
+#main p{
+margin-top: 30px;
+font-size: var(--font-body-medium);
+color: var(--gray-500);
+line-height: 1.5;
+text-align: center;
+}
+
+/***************** IT 서비스 페이지 ***************/
+#contents{
+width: 100vw;
+position: relative;
+}
+.si-container {
+margin-top: 7.81vw;
+}
+.si-container .top-tab {
+width: 100%;
+padding:0 10.42vw;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.si-container .top-tab ul{
+display: flex;    
+margin-bottom: 5.21vw;
+}
+.si-container .top-tab ul > li{
+padding: 15px 30px;   
+margin-right: -1px;
+border: 1px solid var(--gray-200);
+}
+.si-container .top-tab ul > li a{
+color: var(--gray-300);
+font-size: var(--font-body-small);
+text-decoration: none;
+}
+.si-container .top-tab ul > li.active{
+z-index: 1;
+border: 1px solid var(--navy-500);    
+}
+.si-container .top-tab ul > li.active a{
+color:var(--navy-500);    
+}
+.si-container .top-tab .sub-text{
+width: 100%;
+text-align: center;
+font-size: var(--font-body-large);   
+margin-bottom: 5.21vw;
+color: var(--gray-500);
+}
+.si-container .si-process{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding:7.81vw 10.42vw;  
+background-color: var(--gray-100);
+}
+.si-container .si-process h4, .si-container .core-tech h4, .si-container .biz-conduct h4{
+width: 100%;
+text-align: center;
+margin-bottom: 3.13vw;
+font-size: 600;
+font-size: var(--font-title-medium);
+}
+.si-container .si-process img{
+width: 100%;
+height: auto;
+max-width: 1320px;
+}
+.si-container .core-tech{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding:7.81vw 10.42vw;     
+}
+.si-container .core-tech ul{
+display: flex;
+gap: 2.08vw;
+flex-wrap: wrap;
+}
+.si-container .core-tech ul > li {
+ width: calc(20% -  2.08vw);
+border-radius: 15px;
+border: 1px solid var(--Gray200, #EBEBEB);
+background: #FFF;
+padding: 2.08vw;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+box-shadow: 2px 2px 2px 0px rgba(184, 184, 184, 0.25);   
+}
+.si-container .core-tech ul > li img{
+width: 100%;
+height: auto;
+}
+.si-container .core-tech ul > li p{
+width: 100%;
+margin-top: 2.60vw;
+text-align: center;
+font-size: var(--font-body-medium);
+}
+.si-container .biz-conduct{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding:7.81vw 10.42vw;  
+background-color: var(--gray-100);
+}
+
+.si-container .biz-conduct > ul {
+display: flex;
+flex-wrap: wrap;
+gap: 2.60vw;
+}
+.si-container .biz-conduct > ul > li{
+width: calc(50% - 2.60vw);
+padding: 2.08vw 2.60vw;
+background-color: var(--blue-300);
+color: var(--deflut-white);
+border-radius: 15px;
+text-align: center;
+font-size: var(--font-body-medium);
+}
+.si-container .biz-conduct > ul > li:nth-child(2){
+background-color: var(--navy-400);;
+}
+.si-container .biz-conduct > ul > li:nth-child(3){
+background-color: var(--navy-300);;
+}
+.si-container .biz-conduct > ul > li:nth-child(4){
+background-color:#44A5FF;
+}
+
+@media (max-width:1280px){
+#main {
+    height: 260px;
+}
+.si-container .core-tech, .si-container .biz-conduct ,.si-container .si-process  {
+padding: 30px 20px;
+}
+.si-container .top-tab ul > li {
+    padding: 10px 15px;
+}
+.si-container .top-tab ul > li  span{
+display: none;
+}
+.si-container .core-tech ul {
+justify-content: center;
+gap: 10px;
+}
+.si-container .core-tech ul > li {
+width: calc(33.33% -  10px);
+}
+.si-container .biz-conduct > ul > li{
+width: 100%;}
+}

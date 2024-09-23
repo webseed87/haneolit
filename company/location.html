@@ -126,36 +126,42 @@
             <h4>Location 위치</h4>
         </div>
         <ul class="address">
-            <li><span>본사</span>(06083) 서울시 강남구 영동대로 602, 6층 TA49호(삼성동)</li>
-            <li><span>AOS운영실</span>(07328) 서울시 영등포구 국제금융로6길 38 보험개발원 13층 IT실</li>
-            <li><span>개발실</span>(05408) 서울시 강동구 양재대로 1313 3층</li>
+            <li><span class="category">본사</span><span class="number">(06083)</span> 서울시 강남구 영동대로 602, 6층 TA49호(삼성동)</li>
+            <li><span class="category">AOS운영실</span><span class="number">(07328)</span> 서울시 영등포구 국제금융로6길 38 보험개발원 13층 IT실</li>
+            <li><span class="category">개발실</span><span class="number">(05408)</span> 서울시 강동구 양재대로 1313 3층</li>
         </ul>
-        <div class="map-warp">
+
+            <div class="select-warp">
             <select id="location-select">
                 <option value="headquarters">본사</option>
                 <option value="aos">AOS운영실</option>
                 <option value="dev">개발실</option>
             </select>
+        </div>
             <div class="map">
                 <!-- 본사 -->
                 <iframe id="map-headquarters" class="map-frame"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.7043885537432!2d127.05783767714438!3d37.514889727085794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca469c3b51afd%3A0x5726699e320a260!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsmIHrj5nrjIDroZwgNjAy!5e0!3m2!1sko!2skr!4v1727068768096!5m2!1sko!2skr"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 <!-- AOS운영실 -->
                 <iframe id="map-aos" class="map-frame"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.4228568139065!2d126.92374677714442!3d37.52152822670551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f3ded6aefe5%3A0x2a85269ca0afb215!2z7ISc7Jq47Yq567OE7IucIOyYgeuTse2PrOq1rCDqta3soJzquIjsnLXroZw26ri4IDM4!5e0!3m2!1sko!2skr!4v1727068929518!5m2!1sko!2skr"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 <!-- 개발실 -->
                 <iframe id="map-dev" class="map-frame"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.3294968796313!2d127.13160277714452!3d37.523729426579465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357caff183c7e0ff%3A0x58ad4796b361447a!2z7ISc7Jq47Yq567OE7IucIOqwleuPmeq1rCDslpHsnqzrjIDroZwgMTMxMw!5e0!3m2!1sko!2skr!4v1727068969675!5m2!1sko!2skr"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
         </div>
+        <ul class="phone">
+            <li><span>대표번호</span><img src="../images/phone-icon.svg">070-4607-3939</li>
+            <li><span>이메일</span><img src="../images/mail-icon.svg">hicit@hicit.co.kr</li>
+        </ul>
+
     </section>
     <!-- 푸터 -->
     <footer id="footer">

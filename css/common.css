@@ -572,3 +572,29 @@ color: #aaa;
 margin: 0 10px;
 }
 }
+
+/* 서브 탭 메뉴 */
+.sub-menu {
+background-color: var(--deflut-white);
+display: flex;
+justify-content: center;
+border-bottom: 1px solid var(--gray-200);
+}
+.sub-menu > ul {
+display: flex;
+justify-content: center;
+}
+.sub-menu > ul > li{
+padding: 20px 30px;
+}
+.sub-menu > ul > li a{
+color: var(--gray-400);
+text-decoration: none;
+font-size: var(--font-body-small);
+}
+.sub-menu > ul > li.active{
+border-bottom: 2px solid var(--navy-500);
+}
+.sub-menu > ul > li.active a{
+color: var(--gray-500);    
+}

@@ -26,31 +26,6 @@ line-height: 1.5;
 text-align: center;
 }
 
-/* 서브 탭 메뉴 */
-.sub-menu {
-background-color: var(--deflut-white);
-display: flex;
-justify-content: center;
-border-bottom: 1px solid var(--gray-200);
-}
-.sub-menu > ul {
-display: flex;
-justify-content: center;
-}
-.sub-menu > ul > li{
-padding: 20px 30px;
-}
-.sub-menu > ul > li a{
-color: var(--gray-400);
-text-decoration: none;
-font-size: var(--font-body-small);
-}
-.sub-menu > ul > li.active{
-border-bottom: 2px solid var(--navy-500);
-}
-.sub-menu > ul > li.active a{
-color: var(--gray-500);    
-}
 
 /* 회사소개 내용 */
 #contents{
@@ -59,6 +34,7 @@ position: relative;
 padding: 5.21vw 10.42vw;
 }
 .company-content{
+width: 100%;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
@@ -357,18 +333,20 @@ margin-left: 0;
 /***************** 위치 페이지 ***************/
 
 .company-location{
+width: 100%;
+max-width: 1920px;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-padding: 0 50px;
+margin: 0 auto;
 }
 .company-location .top-titl  > h4{
 font-size: var(--font-title-small);
 color: var(--gray-400);
 }
 .company-location .address{
-width: 100%;
 margin-top: 5.21vw;
+width: 100%;
 display: flex;
 flex-wrap: wrap; 
 border: 1px solid var(--gray-200);
@@ -379,7 +357,7 @@ font-size: var(--font-body-medium);
 width: 100%;
 border-bottom: 1px solid var(--gray-200);
 }
-.company-location .address span{
+.company-location .address .category{
 display: inline-block;
 text-align: center;
 padding: 30px 0;
@@ -387,4 +365,70 @@ width: 130px;
 border-right: 1px solid var(--gray-200);;
 background-color: var(--gray-100);
 margin-right: 30px;
+}
+.company-location .select-warp {
+margin-top: 50px;
+width: 100%;
+display: flex;
+justify-content: end;
+}
+.company-location .select-warp #location-select{
+border: 1px solid var(--gray-200);
+border-radius: 15px;
+padding: 20px 30px;
+width: 300px;
+box-sizing: border-box;
+}
+.company-location .map{
+margin-top: 50px;
+width: 100%;
+}
+
+.company-location .phone{
+width: 100%;
+margin-top: 5.21vw;
+display: flex;
+border: 1px solid var(--gray-200);
+}
+.company-location .phone li{
+display: flex;
+width: 100%;
+align-items: center;
+color: var(--gray-400);
+font-size: var(--font-body-medium);
+}
+.company-location .phone span{
+display: inline-block;
+text-align: center;
+padding: 30px 0;
+width: 130px;
+border-right: 1px solid var(--gray-200);;
+background-color: var(--gray-100);
+margin-right: 30px;
+}
+
+@media (max-width:1280px){
+.company-location .map,.company-location .select-warp {
+margin-top: 30px;
+}
+.company-location .phone{
+flex-wrap: wrap;
+}
+.company-location .phone span{
+padding: 10px 5px;
+width: 100px;
+margin-right: 0px;
+}
+.company-location .address li{
+text-align: center;
+}
+.company-location .address .category{
+width: 100%;
+padding: 10px 5px;
+margin-right: 10px;
+}
+.company-location .phone img{
+width: 24px;
+height: auto;
+}
 }
