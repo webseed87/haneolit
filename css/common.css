@@ -71,7 +71,12 @@ overflow: hidden;
 clip: rect(0, 0, 0, 0);
 border: 0;
 }
-
+select {
+appearance: none; 
+-webkit-appearance: none; 
+-moz-appearance: none; 
+}
+  
 /* 기본스타일 선언 */
 body{
 font-family: 'Pretendard', sans-serif;
@@ -556,7 +561,7 @@ justify-content: left;
 margin-left: 40px;
 }
 
-#footer .top-button{
+#footer-main .top-button, #footer .top-button{
 display: none;
 }
 #footer .lnfo {
