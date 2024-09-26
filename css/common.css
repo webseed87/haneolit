@@ -106,6 +106,13 @@ font-size: 14px;
 --font-body-xsmall: 16px;
 --font-caption-large: 14px;
 --font-caption-small: 12px;
+--padding-width-large:10.42vw;
+--padding-height-large:5.21vw;
+--padding-width-medium:50px;
+--padding-height-medium:40px;
+--margin-top-large:60px;
+--margin-small:30px;
+--gab-large:40px;
 overflow-x: hidden;
 }
 body.overflow{
@@ -497,6 +504,14 @@ body{
 --font-body-xsmall: 12px;
 --font-caption-large: 13px;
 --font-caption-small: 12px;
+--padding-width-large:20px;
+--padding-height-large:30px;
+--margin-top-large:30px;
+--gab-large:20px;
+--padding-width-medium:20px;
+--padding-height-medium:15px;
+--margin-top-large:20px;
+--margin-small:10px;
 overflow-x: hidden;
 }
 #header {

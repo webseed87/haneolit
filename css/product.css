@@ -1,0 +1,126 @@
+/* 메인 비주얼 */
+#main{
+background-image: url(../images/product-bg.png);
+background-position: center center;
+background-size: cover;
+width: 100vw;
+height: 460px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+#main h2{
+margin-top: 50px;
+font-size: var(--font-headline-small);
+color: var(--gray-500);
+font-weight: 700;
+text-align: center;
+}
+#main p{
+margin-top: 30px;
+font-size: var(--font-body-medium);
+color: var(--gray-500);
+line-height: 1.5;
+text-align: center;
+}
+
+/***************** seen erp 페이지 ***************/
+.seen-container {
+width: 100vw;
+padding: var(--padding-height-large) var(--padding-width-large);
+box-sizing: border-box;
+}
+.seen-container .top-intro h4{
+font-size: var(--font-title-medium);
+text-align: center;
+color: var(--gray-400);
+}
+.seen-container .top-intro h4 span{
+color: var(--gray-500);    
+}
+.seen-container .top-intro  > p{
+margin-top: var(--margin-top-large);
+text-align: center;
+font-size: var(--font-body-medium);
+line-height: 1.5;
+}
+.seen-container.gray{
+background-color: var(--gray-100);
+padding: var(--padding-height-large) var(--padding-width-large);
+}
+.seen-container.gray .top-intro h4{
+color: var(--gray-500);
+}
+.seenimg img{
+width: 100%;
+height: auto;
+max-width: 1000px;
+}
+.seenimgpro img{
+width: 100%;
+height: auto;
+max-width: 1400px;
+}
+.seen-container .merit{
+margin-top: var(--margin-top-large);
+display: flex;
+flex-wrap: wrap;
+gap: var(--gab-large);
+}
+.seen-container .merit li{
+border-radius: 15px;
+color: var(--deflut-white);
+display: flex;
+background-color: var(--blue-300);
+width: 100%;
+flex-wrap: wrap;
+padding: var(--padding-height-medium) var(--padding-width-medium);
+}
+.seen-container .merit li:nth-child(2){
+background-color: #44A5FF;
+}
+.seen-container .merit li:nth-child(3){
+background-color: var(--navy-400);
+}
+.seen-container .merit li h6{
+width: 100%;
+font-size: var(--font-body-large);
+margin-bottom: 20px;
+}
+.seen-container .merit li p{
+font-size: var(--font-body-small);
+}
+.seen-container .text-list{
+display: flex;
+flex-wrap: wrap;
+margin-top: var(--margin-top-large);
+gap: var(--margin-small);
+}
+.seen-container .text-list li{
+padding-left: var(--margin-small);    
+position: relative;
+width: 100%;
+}
+.seen-container .text-list li::before{
+content: "•";
+position: absolute;
+left: 0;
+}
+.seen-container .text-list h6{
+font-size: var(--font-body-small);
+}
+.seen-container .text-list p{
+font-size: var(--font-body-xsmall);
+color: var(--gray-400);
+margin-top: 20px;    
+}
+
+@media (max-width:1280px){
+#main{
+height: 260px; 
+} 
+.seen-container .text-list p{
+margin-top: 10px;   
+}
+}
