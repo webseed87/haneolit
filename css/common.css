@@ -113,10 +113,14 @@ font-size: 14px;
 --margin-top-large:60px;
 --margin-small:30px;
 --gab-large:40px;
+--gab-small:20px;
 overflow-x: hidden;
 }
 body.overflow{
 overflow: hidden;
+}
+.mr10{
+margin-right: 10px;
 }
 /* 버튼 */
 .navy-button{
@@ -595,6 +599,10 @@ margin: 0 10px;
 
 /* 서브 탭 메뉴 */
 .sub-menu {
+width: 100%;
+position: sticky;
+top: 0;
+z-index: 1;
 background-color: var(--deflut-white);
 display: flex;
 justify-content: center;

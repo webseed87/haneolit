@@ -1,0 +1,365 @@
+/* 메인 비주얼 */
+#main{
+background-image: url(../images/employment.png);
+background-position: center center;
+background-size: cover;
+width: 100vw;
+height: 460px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+#main h2{
+margin-top: 50px;
+font-size: var(--font-headline-small);
+color: var(--gray-500);
+font-weight: 700;
+text-align: center;
+}
+#main p{
+margin-top: 30px;
+font-size: var(--font-body-medium);
+color: var(--gray-500);
+line-height: 1.5;
+text-align: center;
+}
+
+/***************** 채용정보 페이지 ***************/
+.job-container {
+width: 100vw;
+padding: var(--padding-height-large) var(--padding-width-large);
+box-sizing: border-box;
+}
+.job-container > h4{
+font-size: var(--font-title-medium);
+text-align: center;
+}
+.job-container > p{
+font-size: var(--font-body-medium);
+margin-top: var(--margin-top-large);
+text-align: center;
+}
+.job-container > .img {
+margin-top: var(--margin-top-large);
+display: flex;
+justify-content: center;
+}
+.job-container >.img img{
+width: 100%;
+height: auto;
+max-width: 1400px;
+}
+.job-container.gray{
+background-color: var(--gray-100);
+}
+
+.welfare {
+width: 100%;
+margin-top: var(--margin-top-large);
+display: flex;
+gap:var(--gab-large);
+}
+.welfare  > li{
+width: calc((100% / 4) - (var(--gab-large) / 4));
+padding: var(--margin-small);
+border-radius: 15px;
+border: 1px solid var(--gray-200);
+background: #FFF;
+box-shadow: 2px 2px 2px 0px rgba(184, 184, 184, 0.25);
+display: flex;
+gap: var(--gab-large);
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+}
+.welfare li > div{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.welfare li > .img img{
+width: 100%;
+height: auto;
+max-width: 100px;
+}
+.welfare li .content{
+display: flex;
+align-items: flex-start;
+}
+.welfare  li .content h5{
+font-size: var(--font-body-medium);
+width: 100%;
+text-align: center;
+}
+.welfare  li .content > ul{
+margin-top: var(--margin-small);    
+display: flex;
+flex-wrap: wrap;
+padding: 0 var(--padding-height-medium);
+gap: 20px;
+}
+.welfare  li .content > ul > li{
+position: relative;
+font-size: var(--font-body-small);
+padding-left: 10px;
+color: var(--gray-400);
+}
+.welfare  li .content > ul > li::before{
+content: "•";
+position: absolute;
+left: 0;
+color: var(--blue-300);
+}
+.job-container .job-process{
+ margin-top: var(--margin-top-large);
+display: flex;
+justify-content: center;
+}
+.job-container .job-process li {
+text-align: center;
+position: relative;
+padding: 0 7.81vw 0 5.21vw;
+height: 100%;
+}
+.job-container .job-process li .step{
+color: var(--blue-300);
+font-size: var(--font-body-xsmall);
+}
+.job-container .job-process li .title{
+ margin-top: 10p;
+font-size: var(--font-body-large);   
+}
+.job-container .job-process li .img{
+margin-top: var(--margin-small);
+}
+.job-container .job-process li::after{
+content: "";
+position: absolute;
+right: 0;
+top: 50%;
+transform: translate(0, -50%);
+width: 50px;
+height: 50px;
+background-image: url(../images/job-processicon.svg);
+background-repeat: no-repeat;
+background-size: contain;
+}
+.job-container .job-process li:last-child{
+padding: 0 5.21vw 0 5.21vw;  
+}
+.job-container .job-process li:last-child::after{
+display: none;
+}
+.job-container .develpoment{
+width: 100%;
+margin-top: var(--margin-top-large);
+background-color: #F0F8FA;
+border-radius: 30px;
+padding: var(--padding-width-medium) var(--padding-height-medium);
+gap: var(--gab-small);
+display: flex;
+flex-wrap: wrap;
+}
+.job-container .develpoment h5{
+font-size: var(--font-body-medium);
+width: 100%;
+text-align: center;
+}
+.job-container .develpoment > li{
+display: flex;
+width: 100%;
+}
+.job-container .develpoment > li .title{
+width: 15%;
+padding: 20px 30px;  
+font-size: var(--font-body-small);
+display: flex;
+align-items: center;
+}
+.job-container .develpoment > li .contents{
+background-color: var(--deflut-white);  
+border-radius: 15px;
+padding: 20px 30px;  
+width: 85%;
+font-size: var(--font-body-medium);
+color: var(--gray-500);
+}
+.job-container .develpoment > li .contents p{
+margin-bottom: 10px;
+font-size: var(--font-body-small);
+}
+.job-container .develpoment > li .contents p span{
+color: var(--blue-300);
+display: inline-block;
+margin-right: 10px;
+font-size: var(--font-body-medium);
+}
+.job-container .job-info{
+display: flex;
+gap: var(--gab-large);
+margin-top: var(--margin-top-large);
+}
+.job-container .job-info li{
+width: calc(33.33% - var(--gab-large) + ( var(--gab-large) / 3));
+border-radius: 30px;
+background: rgba(12, 40, 72, 0.05);
+padding: var(--padding-width-medium) var(--padding-height-medium);  
+}
+.job-container .job-info li:nth-child(2){
+background: #F4F9FF;
+}
+.job-container .job-info li:nth-child(3){
+background: rgba(26, 79, 140, 0.05);
+}
+.job-container .job-info li h5{
+font-size: var(--font-body-medium);
+width: 100%;
+text-align: center;   
+}
+.job-container .job-info .job-detail{
+margin-top: var(--margin-small);
+border-radius: 20px;
+background-color: var(--deflut-white);
+display: flex;
+padding: 30px;
+flex-direction: column;
+gap: 10px;
+height: calc(100% - 50px);
+}
+.job-container .job-info .job-detail p{
+width: 100%;
+text-align: center;
+font-size: var(--font-body-xsmall);
+color: var(--gray-400);
+}
+.job-container .job-info .job-detail p.title{
+font-size: var(--font-body-medium);
+color: var(--blue-300);
+}
+.job-container .borad-list{
+width: 100%;
+margin-top: var(--margin-top-large);
+display: flex;
+gap: var(--gab-large);
+}
+.job-container .borad-list li{
+width: calc(33.33% - var(--gab-large) + (var(--gab-large) /3));
+border-radius: 15px;
+border: 1px solid var(--gray-200);
+background: #FFF;
+box-shadow: 2px 2px 2px 0px rgba(184, 184, 184, 0.25);
+padding: var(--margin-small) var(--padding-height-medium);
+}
+.job-container .borad-list li .category{
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: var(--gray-400);
+}
+.job-container .borad-list li .category .rate{
+border-radius: 15px;
+border: 1px solid var(--gray-400);
+background: #FFF;
+padding: 5px 10px;
+}
+.job-container .borad-list li .title{
+margin: var(--margin-small) 0;
+}
+.job-container .borad-list li .title a{
+color: #000;
+font-size: var(--font-body-large);
+display: block;
+max-width: 290px;
+}
+.job-container .borad-list li .date{
+display: flex;
+justify-content: space-between;
+align-items: center; 
+border-top: 1px solid var(--gray-200);
+padding-top:var(--padding-height-medium);
+color: var(--gray-400);
+}
+.job-container .borad-list li .date span{
+display: flex;
+align-items: center;
+}
+.job-container .borad-list li.disable{
+ background: var(--gray-100);
+}
+.job-container .borad-list li.disable .title a, .job-container .borad-list li.disable  .category, 
+.job-container .borad-list li.disable .date{
+color: var(--gray-300);
+}
+.job-container .borad-list li.disable  .category .rate{
+border: 1px solid var(--gray-300);
+background-color: var(--gray-100);
+}
+.job-container .borad-list li.disable .title a {
+pointer-events: none;
+}
+
+@media (max-width:1280px){
+#main{
+height: 260px; 
+} 
+.welfare  > li{
+width: calc(50% - var(--gab-large));
+}
+.welfare li > .img img{
+max-width: 60px;
+}
+.welfare  li .content > ul{
+gap: 8px;
+}
+.job-container .job-process li::after{
+width: 24px;
+height: 24px;
+}
+.job-container .job-process li .img{
+width: 60px;
+height: 60px;
+}
+.job-container .job-process li .img img{
+width: auto;
+height: 50px;
+}
+.job-container .develpoment > li {
+flex-wrap: wrap;
+}
+.job-container .develpoment > li .title, .job-container .develpoment > li .contents  {
+text-align: center;
+width: 100%;
+justify-content: center;
+}
+.job-container .job-info li, .job-container .borad-list li  {
+width: 100%;
+}
+.job-container .job-info, .job-container .borad-list  {
+flex-wrap: wrap;
+}
+.job-container .job-info .job-detail {
+height: auto;
+}
+}
+
+@media (max-width:970px){
+.job-container .job-process {
+flex-wrap: wrap;
+}
+.job-container .job-process li {
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 50%;
+padding: 0 0 0 0 ;
+}
+.job-container .job-process li .img {
+display: flex;
+width: 100%;
+justify-content: center;
+}
+.job-container .job-process li::after {
+display: none;
+}
+}

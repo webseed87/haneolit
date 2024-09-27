@@ -34,10 +34,10 @@ box-sizing: border-box;
 .seen-container .top-intro h4{
 font-size: var(--font-title-medium);
 text-align: center;
-color: var(--gray-400);
+color: var(--gray-500); 
 }
 .seen-container .top-intro h4 span{
-color: var(--gray-500);    
+color: var(--gray-400);   
 }
 .seen-container .top-intro  > p{
 margin-top: var(--margin-top-large);
@@ -83,12 +83,12 @@ background-color: #44A5FF;
 .seen-container .merit li:nth-child(3){
 background-color: var(--navy-400);
 }
-.seen-container .merit li h6{
+.seen-container .merit li > h6{
 width: 100%;
 font-size: var(--font-body-large);
 margin-bottom: 20px;
 }
-.seen-container .merit li p{
+.seen-container .merit li > p{
 font-size: var(--font-body-small);
 }
 .seen-container .text-list{
@@ -115,6 +115,98 @@ font-size: var(--font-body-xsmall);
 color: var(--gray-400);
 margin-top: 20px;    
 }
+.seen-container .seenlite-contents{
+margin-top: var(--margin-top-large);    
+}
+.seen-container .seenlite-contents > h5{
+color: var(--navy-400);
+font-size: var(--font-title-small);
+text-align: center;
+}
+.seen-container .navy-box{
+display: flex;
+margin-top: var(--margin-small);
+justify-content: center;
+gap: 10px;
+}
+.seen-container .navy-box li{
+width: 100%;
+background-color: var(--navy-300);    
+color: var(--deflut-white);
+border-radius: 15px;
+text-align: center;
+padding: 30px 50px;
+font-size: var(--font-title-small);
+}
+.seen-container .seenlite-merit{
+margin-top: var(--margin-small);   
+display: flex; 
+gap: 20px;
+}
+.seen-container .seenlite-merit > li{
+width: 100%;
+background: rgba(26, 79, 140, 0.05);
+border-radius: 20px;
+padding: var(--padding-height-medium) var(--padding-width-medium);
+}
+.seen-container .seenlite-merit > li > ul{
+gap: 10px;
+display: flex;
+flex-wrap: wrap;
+}
+.seen-container .seenlite-merit > li > ul > h6{
+font-size: var(--font-title-small);   
+margin-bottom: var(--margin-small);  
+}
+.seen-container .seenlite-merit > li > ul > li {
+position: relative;
+width: 100%;
+padding-left: 20px;
+color: var(--gray-400);
+}
+.seen-container .seenlite-merit > li > ul > li::before{
+content: "•";
+position: absolute;
+left: 0;
+}
+.isky {
+margin-top: var(--margin-top-large);
+display: flex;
+gap:var(--gab-large);
+flex-wrap: wrap;
+}
+.isky  li{
+width: calc(25% - var(--gab-large) + ( var(--gab-large) / 4));
+padding: var(--margin-small);
+border-radius: 15px;
+border: 1px solid var(--gray-200);
+background: #FFF;
+box-shadow: 2px 2px 2px 0px rgba(184, 184, 184, 0.25);
+display: flex;
+gap: var(--gab-large);
+flex-direction: column;
+flex-wrap: wrap;
+}
+.isky  li > div{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.isky  li .content{
+display: flex;
+align-items: flex-start;
+}
+.isky  li .content h5{
+font-size: 1.04vw;
+width: 100%;
+text-align: center;
+}
+.isky  li .content p{
+margin-top: 26px;    
+font-size: var(--font-body-xsmall);
+color: var(--gray-400);
+text-align: center;
+}
 
 @media (max-width:1280px){
 #main{
@@ -123,4 +215,38 @@ height: 260px;
 .seen-container .text-list p{
 margin-top: 10px;   
 }
+.seen-container .navy-box{
+flex-wrap: wrap;
+}
+.seen-container .navy-box li {
+width: calc(25% - 10px);
+}
+.seen-container .seenlite-merit {
+flex-wrap: wrap;
+}
+.seen-container .navy-box li {
+padding: 15px 20px;
+}
+.isky  li{
+width: calc(33.33% - var(--gab-large));
+}
+.isky li .content h5 {
+font-size: 16px;
+}
+.isky  li .img img {
+max-width: 70px;
+}
+.isky li .content p {
+margin-top: 10px;
+}
+}
+
+@media (max-width:970px) {
+.seen-container .navy-box li {
+width: calc(33.33% - 10px);
+}
+.isky li {
+width: calc(50% - var(--gab-large));
+}
+
 }
