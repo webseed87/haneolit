@@ -115,6 +115,7 @@ font-size: 14px;
 --gab-large:40px;
 --gab-small:20px;
 overflow-x: hidden;
+color: var(--gray-500);
 }
 body.overflow{
 overflow: hidden;
@@ -137,6 +138,21 @@ text-decoration: none;
 }
 .navy-button:hover{
 background-color: var(--navy-400);
+}
+.blue-button{
+background-color: var(--blue-300);
+color: var(--deflut-white);
+font-size: var(--font-body-small);
+display: flex;
+gap: 10px;
+align-items: center;
+justify-content: center;
+padding: 10px 15px;
+border-radius: 10px;
+text-decoration: none;
+}
+.blue-button:hover{
+background-color: var(--blue-300);
 }
 .white-button{
 background-color:transparent;
@@ -625,4 +641,10 @@ border-bottom: 2px solid var(--navy-500);
 }
 .sub-menu > ul > li.active a{
 color: var(--gray-500);    
+}
+
+@media (max-width:620px){
+.sub-menu > ul > li {
+padding: 10px 15px;
+}
 }
