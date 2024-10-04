@@ -56,6 +56,11 @@ background-color: #FAFCFF;
 border-radius: 30px;
 padding: 1.56vw 2.60vw;
 }
+.biz-field .field-list li  img{
+width: 100%;
+height: auto;
+max-width: 100px;
+}
 .biz-field .field-list li > figcaption{
 display: block;
 width: 100%;
