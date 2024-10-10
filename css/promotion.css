@@ -354,6 +354,15 @@ height: 22.91vw;
 align-items: center;
 flex-direction: column;
 }
+.pro-container .img-warp.chat{
+background-image: url(../images/chat-bg.png);
+}
+.pro-container .img-warp.car{
+background-image: url(../images/car-bg.png);
+}
+.pro-container .img-warp.ems{
+background-image: url(../images/ems-bg.png);
+}
 .pro-container .img-warp > h4{
 width: 100%;
 text-align: center;
@@ -390,6 +399,11 @@ gap: var(--gab-large);
 }
 .pro-container .outline .contents .img > img{
 max-width: 395px;
+width: 100%;
+height: auto;
+}
+.pro-container .outline .contents .img-01 > img{
+max-width: 600px;
 width: 100%;
 height: auto;
 }
@@ -440,6 +454,7 @@ border-bottom: 1px solid var(--gray-200);
 }
 .pro-container .effect .text-warp{
 display: flex;
+border-bottom: 1px solid var(--gray-200);
 }
 .pro-container .effect .text-warp .number{
 display: flex;
@@ -447,6 +462,9 @@ align-items: center;
 width: 60px;
 justify-content: center;
 }
+.pro-container .effect .text-warp.last{
+border-bottom:none;
+ }
 .pro-container .effect .text-warp .content{
 width: calc(100% - 60px);
 background: var(--deflut-white);
@@ -458,7 +476,7 @@ border-bottom-right-radius: 30px;
 .pro-container .effect .text-warp .content p:first-child{
 font-size: var(--font-body-medium);
 }
-.pro-container .effect .text-warp .content p:last-child{
+.pro-container .effect .text-warp .content p.last{
 font-size: var(--font-body-small);
 margin-top: var(--margin-small);
 margin-left: 10px;
