@@ -303,8 +303,11 @@ pointer-events: none;
 #main{
 height: 260px; 
 } 
+.welfare {
+flex-wrap: wrap;
+}
 .welfare  > li{
-width: calc(50% - var(--gab-large));
+width: calc(50% - 10px);
 }
 .welfare li > .img img{
 max-width: 60px;
