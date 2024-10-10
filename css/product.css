@@ -247,7 +247,7 @@ margin-top: 10px;
 width: calc(33.33% - 10px);
 }
 .isky li {
-width: calc(50% - var(--gab-large));
+width: calc(50% - 10px);
 }
 
 }
