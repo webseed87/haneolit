@@ -237,13 +237,13 @@ flex-wrap: wrap;
 .company-history .tab-contaner > h4 {
 width: 100%;
 font-size: var(--font-body-xsmall);   
-color: var(--deflut-white);
+color: var(--default-white);
 text-align: center;
 }
 .company-history .tab-contaner > h5{
 font-size: var(--font-title-large);
 width: 100%;   
-color: var(--deflut-white);
+color: var(--default-white);
 text-align: center;
 margin-top: 30px;
 }

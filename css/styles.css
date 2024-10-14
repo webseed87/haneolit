@@ -172,7 +172,7 @@ border-radius: 30px;
 transition: .5s;
 }
 .partner-tab li:nth-child(2).active .partner-logo{
-background-color: var(--defult-black);
+background-color: var(--default-black);
 }
 .partner-tab li:nth-child(3).active .partner-logo{
 background: linear-gradient(90.81deg, #e5437a .69%, #f28d52 75.01%, #ffd028 99.31%);
@@ -213,7 +213,7 @@ background-position: center;
 background-size: cover;
 }
 .promotion > h3 {
-color: var(--deflut-white);
+color: var(--default-white);
 font-size: var(--font-headline-small);
 font-weight: 600;
 width: 100%;
@@ -351,7 +351,7 @@ border-radius: 30px;
 transition: .5s;
 }
 .swiper-slide .partner-logo.cj{
-background-color: var(--defult-black);
+background-color: var(--default-black);
 }
 .swiper-slide .partner-logo.lg{
 background: linear-gradient(90.81deg, #e5437a .69%, #f28d52 75.01%, #ffd028 99.31%);

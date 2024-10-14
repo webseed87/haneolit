@@ -67,11 +67,11 @@ max-width: 1400px;
 margin-top: var(--margin-top-large);
 display: flex;
 flex-wrap: wrap;
-gap: var(--gab-large);
+gap: var(--gap-large);
 }
 .seen-container .merit li{
 border-radius: 15px;
-color: var(--deflut-white);
+color: var(--default-white);
 display: flex;
 background-color: var(--blue-300);
 width: 100%;
@@ -133,7 +133,7 @@ gap: 10px;
 .seen-container .navy-box li{
 width: 100%;
 background-color: var(--navy-300);    
-color: var(--deflut-white);
+color: var(--default-white);
 border-radius: 15px;
 text-align: center;
 padding: 30px 50px;
@@ -173,18 +173,18 @@ left: 0;
 .isky {
 margin-top: var(--margin-top-large);
 display: flex;
-gap:var(--gab-large);
+gap:var(--gap-large);
 flex-wrap: wrap;
 }
 .isky  li{
-width: calc(25% - var(--gab-large) + ( var(--gab-large) / 4));
+width: calc(25% - var(--gap-large) + ( var(--gap-large) / 4));
 padding: var(--margin-small);
 border-radius: 15px;
 border: 1px solid var(--gray-200);
 background: #FFF;
 box-shadow: 2px 2px 2px 0px rgba(184, 184, 184, 0.25);
 display: flex;
-gap: var(--gab-large);
+gap: var(--gap-large);
 flex-direction: column;
 flex-wrap: wrap;
 }
@@ -229,7 +229,7 @@ flex-wrap: wrap;
 padding: 15px 20px;
 }
 .isky  li{
-width: calc(33.33% - var(--gab-large));
+width: calc(33.33% - var(--gap-large));
 }
 .isky li .content h5 {
 font-size: 16px;

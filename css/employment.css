@@ -58,17 +58,17 @@ background-color: var(--gray-100);
 width: 100%;
 margin-top: var(--margin-top-large);
 display: flex;
-gap:var(--gab-large);
+gap:var(--gap-large);
 }
 .welfare  > li{
-width: calc((100% / 4) - (var(--gab-large) / 4));
+width: calc((100% / 4) - (var(--gap-large) / 4));
 padding: var(--margin-small);
 border-radius: 15px;
 border: 1px solid var(--gray-200);
 background: #FFF;
 box-shadow: 2px 2px 2px 0px rgba(184, 184, 184, 0.25);
 display: flex;
-gap: var(--gab-large);
+gap: var(--gap-large);
 flex-direction: column;
 flex-wrap: wrap;
 align-items: center;
@@ -178,7 +178,7 @@ display: flex;
 align-items: center;
 }
 .job-container .develpoment > li .contents{
-background-color: var(--deflut-white);  
+background-color: var(--default-white);  
 border-radius: 15px;
 padding: 20px 30px;  
 width: 85%;
@@ -197,11 +197,11 @@ font-size: var(--font-body-medium);
 }
 .job-container .job-info{
 display: flex;
-gap: var(--gab-large);
+gap: var(--gap-large);
 margin-top: var(--margin-top-large);
 }
 .job-container .job-info li{
-width: calc(33.33% - var(--gab-large) + ( var(--gab-large) / 3));
+width: calc(33.33% - var(--gap-large) + ( var(--gap-large) / 3));
 border-radius: 30px;
 background: rgba(12, 40, 72, 0.05);
 padding: var(--padding-width-medium) var(--padding-height-medium);  
@@ -220,7 +220,7 @@ text-align: center;
 .job-container .job-info .job-detail{
 margin-top: var(--margin-small);
 border-radius: 20px;
-background-color: var(--deflut-white);
+background-color: var(--default-white);
 display: flex;
 padding: 30px;
 flex-direction: column;
@@ -241,10 +241,10 @@ color: var(--blue-300);
 width: 100%;
 margin-top: var(--margin-top-large);
 display: flex;
-gap: var(--gab-large);
+gap: var(--gap-large);
 }
 .job-container .borad-list li{
-width: calc(33.33% - var(--gab-large) + (var(--gab-large) /3));
+width: calc(33.33% - var(--gap-large) + (var(--gap-large) /3));
 border-radius: 15px;
 border: 1px solid var(--gray-200);
 background: #FFF;

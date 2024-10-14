@@ -55,7 +55,7 @@ font-size: var(--font-body-small);
 text-decoration: none;
 }
 .si-container .top-tab ul > li.active{
-z-index: 1;
+z-index: 0;
 border: 1px solid var(--navy-500);    
 }
 .si-container .top-tab ul > li.active a{
@@ -143,7 +143,7 @@ gap: 2.60vw;
 width: calc(50% - 2.60vw);
 padding: 2.08vw 2.60vw;
 background-color: var(--blue-300);
-color: var(--deflut-white);
+color: var(--default-white);
 border-radius: 15px;
 text-align: center;
 font-size: var(--font-body-medium);
@@ -247,7 +247,7 @@ border: 1px solid var(--gray-200);
 border-top-left-radius: 30px;   
 border-top-right-radius: 30px;   
 background-color: var(--navy-400); 
-color: var(--deflut-white);
+color: var(--default-white);
 padding: 20px 30px;
 font-size: var(--font-title-small);
 text-align: center;
@@ -262,7 +262,7 @@ background-color: var(--navy-300);
 background-color: var(--navy-500);
 }
 .si-container .isp > ul > li .text{
-background-color: var(--deflut-white);
+background-color: var(--default-white);
 padding: 30px 2.60vw;
 font-size: var(--font-body-small);
 text-align: center;
@@ -308,7 +308,7 @@ border:1px solid var(--navy-500);
 color: var(--navy-500);
 }
 .si-container .ismp > ul > li .text{
-background-color: var(--deflut-white);
+background-color: var(--default-white);
 padding: 30px 50px;
 font-size: var(--font-body-small);
 text-align: center;
@@ -334,7 +334,7 @@ width: 100%;
 border-radius: 15px;    
 display: flex; 
 background-color: var(--navy-500); 
-color: var(--deflut-white);
+color: var(--default-white);
 align-items: center;
 }
 .si-container .brp > ul > li > div{
@@ -593,7 +593,7 @@ background-image: url(../images/system-bg.png);
 }
 .erp-container .top-warp .sub-title-warp h3{
 text-align: center;
-color: var(--deflut-white);
+color: var(--default-white);
 font-size: var(--font-title-medium);
 width: 100%;
 }
@@ -686,7 +686,7 @@ width: 290px;
 }
 .erp-container .number-list > li .number span.num{
 background-color: var(--blue-300);
-color: var(--deflut-white);
+color: var(--default-white);
 padding: 20px 30px;
 border: 1px solid var(--blue-300);
 height: 100%;
@@ -700,7 +700,7 @@ width: 80px !important;
 font-size: 18px;
 height: 100%;
 width: 100%;
-background-color: var(--deflut-white);
+background-color: var(--default-white);
 padding: 20px 30px;
 display: flex;
 align-items: center;
@@ -782,7 +782,7 @@ text-align: center;
 height: 100%;
 }
 .erp-container .isp-warp.system{
-background-color: var(--deflut-white);
+background-color: var(--default-white);
 }
 .erp-container .develop{
 width: 100%;
