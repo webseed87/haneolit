@@ -16,10 +16,37 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="js/common.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
 </head>
+<!-- 인트로 시작 -->
 
-<body>
+<body class="intro">
+  <div id="intro">
+    <div class="ani-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="600" height="99" viewBox="0 0 600 99" fill="none">
+        <path id="logoPath7" d="M558.236 0H550.462V46.8275H558.236V0Z" fill="#0C2848"/>
+        <path id="logoPath8" d="M600 0V7.76446H586.922V46.8275H579.148V7.76446H566.131V0H600Z" fill="#0C2848"/>
+        <path id="logoPath6" d="M536.481 81.1356V96.9655H467.356V1.38436H483.206V81.1356H536.481Z" fill="#0C2848"/>
+        <path id="logoPath5" d="M404.138 0C377.019 0 354.902 22.0896 354.902 49.1749C354.902 76.2602 376.959 98.3498 404.138 98.3498C431.318 98.3498 453.375 76.3204 453.375 49.1749C453.375 22.0294 431.258 0 404.138 0ZM404.138 82.4598C385.757 82.4598 370.751 67.5327 370.751 49.1147C370.751 30.6967 385.697 15.7697 404.138 15.7697C422.579 15.7697 437.525 30.6967 437.525 49.1147C437.525 67.5327 422.579 82.4598 404.138 82.4598Z" fill="#0C2848"/>
+        <path id="logoPath4" d="M350.864 81.1356V96.9655H281.679V42.6142H338.57V58.4441H297.589V81.1356H350.864Z" fill="#0C2848"/>
+        <path id="logoPath3" d="M287.224 1.38436C266.553 1.38436 249.859 18.1171 249.859 38.7019V68.0745L208.819 1.38436H192.125V96.9655H207.975V30.2152L249.016 96.9655H265.709V38.7019C265.709 26.8446 275.352 17.2142 287.224 17.2142H350.804V1.38436H287.224Z" fill="#0C2848"/>
+        <path id="logoPath2" d="M122.881 1.38436L81.6593 96.9655H98.9554L132.885 18.2375L166.754 96.9655H184.05L142.828 1.38436H122.881Z" fill="#0C2848"/>
+        <path id="logoPath1" d="M57.734 41.2299H15.8497V1.38436H0V96.9655H15.8497V57.1199H57.734V96.9655H73.5838V1.38436H57.734V41.2299Z" fill="#0C2848"/>
+  
+      </svg>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+      <script>
+        anime({
+          targets: ['#logoPath1', '#logoPath2', '#logoPath3', '#logoPath4', '#logoPath5', '#logoPath6', '#logoPath7', '#logoPath8'],  // 애니메이션 적용할 요소들
+          opacity: [0, 1], // 투명에서 불투명으로 전환
+          scale: [0, 1], // 작아졌다가 커지는 효과
+          easing: 'easeInOutSine',
+          duration: 1000, // 각 요소가 나타나는 시간
+          delay: anime.stagger(500), // 각 요소에 순차적으로 지연시간을 줌
+          loop: false // 애니메이션 반복 여부
+        });
+      </script>
+    </div>
+   </div>
   <!-- 헤더 -->
   <header id="header">
     <h1><a href="/" class="logo"><span class="blind">Haneolit</span></a></h1>

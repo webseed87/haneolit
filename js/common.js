@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('body').classList.toggle('overflow');
     });
 
+    setTimeout(function() {
+        document.querySelector("body").classList.remove('intro');
+      }, 6000);
+
 const partnerTabItems = document.querySelectorAll('.partner-tab li'); 
     partnerTabItems.forEach(function(item) {
         item.addEventListener('click', function() {
