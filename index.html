@@ -37,12 +37,12 @@
       <script>
         anime({
           targets: ['#logoPath1', '#logoPath2', '#logoPath3', '#logoPath4', '#logoPath5', '#logoPath6', '#logoPath7', '#logoPath8'],  // 애니메이션 적용할 요소들
-          opacity: [0, 1], // 투명에서 불투명으로 전환
-          scale: [0, 1], // 작아졌다가 커지는 효과
+          opacity: [0, 1], 
+          scale: [0, 1], 
           easing: 'easeInOutSine',
-          duration: 1000, // 각 요소가 나타나는 시간
-          delay: anime.stagger(500), // 각 요소에 순차적으로 지연시간을 줌
-          loop: false // 애니메이션 반복 여부
+          duration: 500, 
+          delay: anime.stagger(500), 
+          loop: false 
         });
       </script>
     </div>

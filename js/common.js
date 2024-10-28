@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setTimeout(function() {
         document.querySelector("body").classList.remove('intro');
-      }, 6000);
+      }, 5000);
 
 const partnerTabItems = document.querySelectorAll('.partner-tab li'); 
     partnerTabItems.forEach(function(item) {
