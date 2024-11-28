@@ -392,7 +392,6 @@ font-size: var(--font-title-medium);
 .pro-container .outline .contents{
 padding: 60px 80px;
 display: flex;
-flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 gap: var(--gap-large);
@@ -416,6 +415,7 @@ gap: var(--gab-small);
 }
 .pro-container .outline .contents ul > li {
 display: flex;
+margin-bottom: 20px;
 }
 .pro-container .outline .contents ul > li > span{
 display: flex;
@@ -427,6 +427,7 @@ font-size: var(--font-body-medium);
 }
 .pro-container .outline .contents ul > li > span:last-child{
 font-size: var(--font-body-small);
+width: calc(100% - 250px);
 }
 
 @media (min-width:1440px){
@@ -464,7 +465,7 @@ justify-content: center;
 }
 .pro-container .effect .text-warp.last{
 border-bottom:none;
- }
+}
 .pro-container .effect .text-warp .content{
 width: calc(100% - 60px);
 background: var(--default-white);
@@ -501,4 +502,48 @@ height: auto;
 height: 200px;
 background-size: cover;
 }
+.pro-container .outline .contents ul {
+width: 100%;
+}
+.pro-container .outline .contents ul > li > span:last-child{
+width: 100%;
+}
+.pro-container .outline .contents{
+    flex-wrap: wrap;
+}
+}
+
+.pro-container .outline .img-01{
+max-width: 600px;
+width: 40%;
+}
+
+.pro-container .img-warp.per01{
+background-image: url(../images/performance01.png);
+}
+.pro-container .img-warp.per02{
+background-image: url(../images/performance02.png);
+}
+.pro-container .img-warp.per08{
+background-image: url(../images/performance08.png);
+}
+.pro-container .img-warp.per09{
+background-image: url(../images/performance09.png);
+}
+.pro-container .img-warp.per14{
+background-image: url(../images/performance14.png);
+}
+
+@media (max-width:490px){
+.pro-container .outline .contents ul > li > span:first-child {
+width: 100%;
+display: flex;
+align-items: center;
+margin-bottom: 5px;
+}
+.pro-container .outline .contents ul > li {
+flex-wrap: wrap;
+}
+
+
 }
