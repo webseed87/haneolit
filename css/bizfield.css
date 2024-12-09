@@ -99,7 +99,7 @@ max-width: 1320px;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-padding:7.81vw var(--padding-width-large);     
+padding:var(--padding-height-large) var(--padding-width-large);     
 }
 .si-container .core-tech ul{
 display: flex;
@@ -111,7 +111,7 @@ width: calc(20% -  2.08vw);
 border-radius: 15px;
 border: 1px solid var(--Gray200, #EBEBEB);
 background: #FFF;
-padding: 2.08vw;
+padding: 40px;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -123,7 +123,7 @@ height: auto;
 }
 .si-container .core-tech ul > li p{
 width: 100%;
-margin-top: 2.60vw;
+margin-top: 30px;
 text-align: center;
 font-size: var(--font-body-medium);
 }
@@ -131,13 +131,13 @@ font-size: var(--font-body-medium);
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-padding:7.81vw var(--padding-width-large);  
+padding:var(--padding-height-large) var(--padding-width-large);  
 background-color: var(--gray-100);
 }
 .si-container .biz-conduct > ul {
 display: flex;
 flex-wrap: wrap;
-gap: 2.60vw;
+gap: 30px;
 }
 .si-container .biz-conduct > ul > li{
 width: calc(50% - 2.60vw);
@@ -916,5 +916,11 @@ flex-direction: column-reverse;
 }
 .erp-container .develop > ul > li > p, .erp-container .develop span.sub-text  {
 margin-top: 20px;
+}
+}
+
+@media (min-width:1921px){
+.si-container {
+margin-top: 150px
 }
 }

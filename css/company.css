@@ -32,6 +32,8 @@ text-align: center;
 width: 100vw;
 position: relative;
 padding: 5.21vw 10.42vw;
+max-width: 1920px;
+margin: 0 auto;
 }
 .company-content{
 width: 100%;
@@ -453,5 +455,24 @@ height: auto;
 }
 .company-location .select-warp #location-select {
 padding: 10px 15px;
+}
+}
+
+@media (min-width: 1921px){
+.company-history .tab-contaner {
+margin-top: 80px;
+padding:50px 50px 0 50px;
+}
+.company-history .tab-contaner .year {
+    margin-top:80px;
+}
+.company-history .year-two , .company-history .year-one{
+    padding: 0 0px;
+}
+.company-history .two-decade {
+    font-size:60px;
+}
+.si-container {
+    margin-top: 100px;
 }
 }

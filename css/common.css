@@ -95,16 +95,17 @@ appearance: none;
 --font-headline-large: 3.75vw;
 --font-headline-small: 3.13vw;
 --font-title-large: 2.50vw;
---font-title-medium: 1.88vw;
---font-title-small: 1.46vw;
---font-body-large: 1.46vw;
+--font-large: 60px;
+--font-title-medium: 36px;
+--font-title-small: 28px;
+--font-body-large: 28px;
 --font-body-medium: 20px;
 --font-body-small: 18px;
 --font-body-xsmall: 16px;
 --font-caption-large: 14px;
 --font-caption-small: 12px;
 --padding-width-large: 10.42vw;
---padding-height-large: 5.21vw;
+--padding-height-large: 100px;
 --padding-width-medium: 50px;
 --padding-height-medium: 40px;
 --margin-top-large: 60px;
@@ -681,4 +682,10 @@ padding: 10px 15px;
 body.intro #intro .ani-logo{
 padding: 0 20px;
 }
+}
+
+@media (min-width:1921px){
+    body{
+        --padding-width-large: 20.31vw;
+    }
 }

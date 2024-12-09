@@ -169,6 +169,7 @@ text-align: center;
 .job-container .develpoment > li{
 display: flex;
 width: 100%;
+margin-top: 20px;
 }
 .job-container .develpoment > li .title{
 width: 15%;
@@ -343,6 +344,9 @@ flex-wrap: wrap;
 }
 .job-container .job-info .job-detail {
 height: auto;
+}
+.job-container .develpoment > li{
+margin-top: 0px;
 }
 }
 
